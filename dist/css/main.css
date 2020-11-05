@@ -1065,18 +1065,13 @@ section#skills div.slider .plate {
   height: 420px;
 }
 
-/* line 96, src/sass/components/_skills.scss */
-section#skills div.slider .plate:hover {
-  cursor: pointer;
-}
-
-/* line 99, src/sass/components/_skills.scss */
+/* line 98, src/sass/components/_skills.scss */
 section#skills div.slider .plate:hover .card {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-/* line 106, src/sass/components/_skills.scss */
+/* line 105, src/sass/components/_skills.scss */
 section#skills div.slider .plate .card {
   z-index: 3;
   position: relative;
@@ -1091,7 +1086,7 @@ section#skills div.slider .plate .card {
           transform-style: preserve-3d;
 }
 
-/* line 115, src/sass/components/_skills.scss */
+/* line 114, src/sass/components/_skills.scss */
 section#skills div.slider .plate .card .face {
   -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.7);
           box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.7);
@@ -1107,18 +1102,18 @@ section#skills div.slider .plate .card .face {
   grid-template-columns: repeat(2, 30px) 70px repeat(2, 30px);
 }
 
-/* line 128, src/sass/components/_skills.scss */
+/* line 127, src/sass/components/_skills.scss */
 section#skills div.slider .plate .card .face div.logo {
   grid-area: 2 / 3 / span 1 / span 1;
 }
 
-/* line 131, src/sass/components/_skills.scss */
+/* line 130, src/sass/components/_skills.scss */
 section#skills div.slider .plate .card .face div.logo img {
   width: 70px;
   height: 70px;
 }
 
-/* line 138, src/sass/components/_skills.scss */
+/* line 137, src/sass/components/_skills.scss */
 section#skills div.slider .plate .card .face div.content {
   grid-area: 3 / 1 / span 4 / span 5;
   display: -webkit-box;
@@ -1135,25 +1130,25 @@ section#skills div.slider .plate .card .face div.content {
           flex-flow: column nowrap;
 }
 
-/* line 145, src/sass/components/_skills.scss */
+/* line 144, src/sass/components/_skills.scss */
 section#skills div.slider .plate .card .face div.content h3 {
   text-transform: uppercase;
 }
 
-/* line 150, src/sass/components/_skills.scss */
+/* line 149, src/sass/components/_skills.scss */
 section#skills div.slider .plate .card .face__frontface {
   color: #FA379C;
   background-color: #6E0D42;
 }
 
-/* line 154, src/sass/components/_skills.scss */
+/* line 153, src/sass/components/_skills.scss */
 section#skills div.slider .plate .card .face__frontface div.content {
   text-align: center;
   font-size: 1.6rem;
   grid-area: 3 / 1 / span 3 / span 5;
 }
 
-/* line 161, src/sass/components/_skills.scss */
+/* line 160, src/sass/components/_skills.scss */
 section#skills div.slider .plate .card .face__backface {
   color: #FA379C;
   background-color: #6E0D42;
@@ -1161,7 +1156,7 @@ section#skills div.slider .plate .card .face__backface {
           transform: rotateY(180deg);
 }
 
-/* line 174, src/sass/components/_skills.scss */
+/* line 173, src/sass/components/_skills.scss */
 section#skills div.slider .is-filpped {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
