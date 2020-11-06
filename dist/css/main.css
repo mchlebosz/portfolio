@@ -891,16 +891,49 @@ section#about h2 {
 /* line 17, src/sass/components/_about.scss */
 section#about div.block {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-area: 2 / 1 / span 5 / span 4;
   background-color: #6E0D42;
-  color: #FA379C;
+  color: #FAE650;
   border-radius: 10px;
-  padding: 40px;
+  padding: 30px 50px;
   -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.7);
           box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+  font-size: 0.9rem;
 }
 
-/* line 27, src/sass/components/_about.scss */
+@media only screen and (max-width: 992px) {
+  /* line 17, src/sass/components/_about.scss */
+  section#about div.block {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 17, src/sass/components/_about.scss */
+  section#about div.block {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* line 17, src/sass/components/_about.scss */
+  section#about div.block {
+    font-size: 0.7rem;
+  }
+}
+
+/* line 49, src/sass/components/_about.scss */
 section#about div.image {
   position: relative;
   height: 100%;
@@ -909,13 +942,13 @@ section#about div.image {
   grid-area: 1 / 4 / span 6 / span 2;
 }
 
-/* line 34, src/sass/components/_about.scss */
+/* line 56, src/sass/components/_about.scss */
 section#about div.image img {
   position: absolute;
   height: 100%;
 }
 
-/* line 40, src/sass/components/_about.scss */
+/* line 62, src/sass/components/_about.scss */
 section#about div.image .shadow {
   opacity: 0.5;
   -webkit-transform: translate(7px, 7px);
@@ -927,22 +960,18 @@ section#about div.image .shadow {
   section#about {
     margin: 40px 0px;
   }
-  /* line 49, src/sass/components/_about.scss */
+  /* line 71, src/sass/components/_about.scss */
   section#about h2 {
     text-transform: uppercase;
     text-align: center;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
     grid-area: 1 / 1 / span 1 / span 4;
   }
-  /* line 56, src/sass/components/_about.scss */
+  /* line 78, src/sass/components/_about.scss */
   section#about div.block {
     grid-area: 2 / 1 / span 5 / span 5;
-    background-color: #6E0D42;
-    color: #FA379C;
-    border-radius: 10px;
-    padding: 40px;
   }
-  /* line 64, src/sass/components/_about.scss */
+  /* line 82, src/sass/components/_about.scss */
   section#about div.image {
     display: none;
   }

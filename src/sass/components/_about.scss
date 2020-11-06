@@ -16,12 +16,34 @@ section#about {
 
     div.block {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         grid-area: 2 / 1 / span 5 / span 4;
         background-color: $c-content-2;
-        color: $c-content-1;
+        color: $c-accent-1;
         border-radius: 10px;
-        padding: 40px;
+        padding: 30px 50px;
         box-shadow: 4px 4px 0px 0px $c-black-a60;
+        text-shadow: 1px 1px $c-black-a60;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+
+        @media only screen and (max-width: $md) {
+            font-size: 0.7rem;
+        }
+
+        @media only screen and (max-width: $sm) {
+            font-size: 0.9rem;
+
+        }
+
+        @media only screen and (max-width: $xs) {
+            font-size: 0.7rem;
+
+        }
+
+
     }
 
     div.image {
@@ -55,10 +77,6 @@ section#about {
 
         div.block {
             grid-area: 2 / 1 / span 5 / span 5;
-            background-color: $c-content-2;
-            color: $c-content-1;
-            border-radius: 10px;
-            padding: 40px;
         }
 
         div.image {
