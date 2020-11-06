@@ -25,8 +25,6 @@
 
 <body>
     <header>
-    <img src="assets/img/profile.png" alt="" srcset="" style="display: none;">
-
         <nav class="desktop">
             <ul>
                 <li class="animate__animated animate__bounceInDown" >
