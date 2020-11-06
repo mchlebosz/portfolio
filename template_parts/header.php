@@ -17,11 +17,16 @@
     <link rel="stylesheet" href="./assets/fontawsome/css/all.min.css">
     <link rel="stylesheet" href="./dist/css/main.min.css">
 
+    <meta property="og:image" content="./assets/img/profile.png" />
+
+
     <title>Mateusz Chlebosz</title>
 </head>
 
 <body>
     <header>
+    <img src="assets/img/profile.png" alt="" srcset="" style="display: none;">
+
         <nav class="desktop">
             <ul>
                 <li class="animate__animated animate__bounceInDown" >
@@ -91,7 +96,7 @@
         </nav>
 
         <div class="heading">
-            <h1 class="name wow animate__animated animate__bounceInLeft ">Mateusz</h1>
-            <h1 class="surname wow animate__animated animate__bounceInRight ">Chlebosz</h1>
+            <h1 class="name wow  animate__bounceInLeft ">Mateusz</h1>
+            <h1 class="surname wow animate__bounceInRight ">Chlebosz</h1>
         </div>
     </header>

@@ -1347,6 +1347,27 @@ section.gallery ul.flexbox img {
   }
 }
 
+@media (max-aspect-ratio: 1 / 1) and (max-width: 768px) {
+  /* line 122, src/sass/components/_gallery.scss */
+  section.gallery ul.flexbox ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /* line 126, src/sass/components/_gallery.scss */
+  section.gallery ul.flexbox li {
+    height: auto;
+    width: 100%;
+  }
+  /* line 131, src/sass/components/_gallery.scss */
+  section.gallery ul.flexbox img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
 /* line 3, src/sass/components/_contact.scss */
 #contact h2 {
   position: relative;
@@ -1498,10 +1519,11 @@ footer section.grid {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 100px;
   }
 }
 
-/* line 22, src/sass/components/_footer.scss */
+/* line 23, src/sass/components/_footer.scss */
 footer section.grid .menu,
 footer section.grid .author,
 footer section.grid .school {
@@ -1526,7 +1548,7 @@ footer section.grid .school {
   text-align: center;
 }
 
-/* line 41, src/sass/components/_footer.scss */
+/* line 42, src/sass/components/_footer.scss */
 footer section.grid .menu h5,
 footer section.grid .menu nav,
 footer section.grid .author h5,
@@ -1537,19 +1559,19 @@ footer section.grid .school nav {
   font-size: 1.4rem;
 }
 
-/* line 48, src/sass/components/_footer.scss */
+/* line 49, src/sass/components/_footer.scss */
 footer section.grid .menu {
   grid-area: 1 / 1 / span 2 / span 1;
   font-weight: bold;
 }
 
-/* line 52, src/sass/components/_footer.scss */
+/* line 53, src/sass/components/_footer.scss */
 footer section.grid .menu nav {
   height: 90%;
   width: 90%;
 }
 
-/* line 57, src/sass/components/_footer.scss */
+/* line 58, src/sass/components/_footer.scss */
 footer section.grid .menu ul {
   height: 100%;
   display: -webkit-box;
@@ -1566,17 +1588,17 @@ footer section.grid .menu ul {
           align-items: center;
 }
 
-/* line 64, src/sass/components/_footer.scss */
+/* line 65, src/sass/components/_footer.scss */
 footer section.grid .menu ul a {
   display: block;
 }
 
-/* line 67, src/sass/components/_footer.scss */
+/* line 68, src/sass/components/_footer.scss */
 footer section.grid .menu ul a li {
   margin: 0px 0px;
 }
 
-/* line 75, src/sass/components/_footer.scss */
+/* line 76, src/sass/components/_footer.scss */
 footer section.grid .author {
   grid-area: 1 / 2 / span 1 / span 1;
   display: -webkit-box;
@@ -1594,7 +1616,7 @@ footer section.grid .author {
           align-items: center;
 }
 
-/* line 83, src/sass/components/_footer.scss */
+/* line 84, src/sass/components/_footer.scss */
 footer section.grid .author .social {
   margin: 20px;
   width: 50%;
@@ -1609,18 +1631,18 @@ footer section.grid .author .social {
       justify-content: space-around;
 }
 
-/* line 90, src/sass/components/_footer.scss */
+/* line 91, src/sass/components/_footer.scss */
 footer section.grid .author .social a {
   display: block;
   font-size: 1.8rem;
 }
 
-/* line 97, src/sass/components/_footer.scss */
+/* line 98, src/sass/components/_footer.scss */
 footer section.grid .school {
   grid-area: 2 / 2 / span 1 / span 1;
 }
 
-/* line 100, src/sass/components/_footer.scss */
+/* line 101, src/sass/components/_footer.scss */
 footer section.grid .school a {
   display: block;
   color: #FAE650;
@@ -1629,7 +1651,7 @@ footer section.grid .school a {
           transform: translate(0px, 0px);
 }
 
-/* line 108, src/sass/components/_footer.scss */
+/* line 109, src/sass/components/_footer.scss */
 footer section.grid .school a:hover {
   -webkit-transform: translate(2px, 2px);
           transform: translate(2px, 2px);

@@ -2,7 +2,7 @@
 
     <section class="grid">
 
-        <div class="menu wow bounceInLeft">
+        <div class="menu wow animate__bounceInLeft">
             <nav>
                 <ul>
                     <a href="#about" class="link">
@@ -23,7 +23,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="author wow bounceInRight">
+        <div class="author wow animate__bounceInRight">
             <h5>&copy; Mateusz Chlebosz 4C</h5>
             <div class="social">
                 <a class="link" href="https://www.linkedin.com/in/mateusz-chlebosz-65053a17a/"><i class="fab fa-linkedin"></i></a>
@@ -33,7 +33,7 @@
                 <a class="link" href="./bonus/index.html"><i class="fas fa-question"></i></a>
             </div>
         </div>
-        <div class="school wow bounceInRight">
+        <div class="school wow animate__bounceInRight">
             <h5>
                 <a href="https://www.zsk.poznan.pl/">Zespoł Szkół komunikacji im hipolita cegielskiego w poznaniu </a>
             </h5>

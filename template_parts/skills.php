@@ -1,6 +1,6 @@
 <section id="skills">
-    <h2 class="wow fadeInUp">Technologie</h2>
-    <div class="slider wow flipInX" id="slider">
+    <h2 class="wow animate__fadeInUp">Technologie</h2>
+    <div class="slider wow animate__flipInX" id="slider">
         <div class="slider-slide">
             <article class="plate">
                 <div class="card">
