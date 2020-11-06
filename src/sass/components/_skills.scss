@@ -1,0 +1,181 @@
+/** desktop **/
+section#skills {
+
+    width: 100vw;
+    position: relative;
+
+    div.arrow {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        z-index: 5;
+        top: 0px;
+        height: 100%;
+
+        &__right {
+            right: 5px;
+        }
+
+        &__left {
+            left: 20px;
+        }
+    }
+
+    .slick-arrow {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        z-index: 5;
+        top: 50%;
+        height: 100%;
+        font-size: 1.4rem;
+
+        transition: all 0.5s ease-in-out;
+
+        i {
+            transition: all 0.5s ease-in-out;
+            text-shadow: 2px 2px $c-black-a60;
+        }
+
+        &:hover {
+            i {
+                text-shadow: 0px 0px $c-black-a60;
+                transform: translate(2px, 2px);
+                color: $c-active;
+            }
+
+        }
+
+
+        &:before {
+            font-size: 0px;
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        font-size: 1.4rem;
+        color: $c-accent-1;
+
+    }
+
+    .slick-prev {
+        left: 18px;
+    }
+
+    .slick-next {
+        right: 18px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        text-shadow: 2px 2px $c-black-a60;
+        text-align: center;
+    }
+
+    div.slider {
+
+        position: relative;
+
+        width: 100%;
+
+        .plate {
+
+            //background-color: $c-black-a60;
+            margin: 40px auto;
+            border-radius: 11px;
+            perspective: 1000px;
+            width: 230px;
+            height: 420px;
+
+
+            &:hover {
+
+                .card {
+                    transform: rotateY(180deg);
+                }
+            }
+
+
+
+            .card {
+                z-index: 3;
+                position: relative;
+                width: 230px;
+                height: 420px;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+
+                .face {
+                    box-shadow: 4px 4px 0px 0px $c-black-a60;
+                    color: $c-content-1;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    display: grid;
+                    padding: 10px;
+                    gap: 5px;
+                    border-radius: 10px;
+                    grid-template-rows: 30px 70px repeat(4, 60px) 30px;
+                    grid-template-columns: repeat(2, 30px) 70px repeat(2, 30px);
+
+                    div.logo {
+                        grid-area: 2 / 3 / span 1 / span 1;
+
+                        img {
+                            width: 70px;
+                            height: 70px;
+                        }
+
+                    }
+
+                    div.content {
+                        grid-area: 3 / 1 / span 4 / span 5;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        flex-flow: column nowrap;
+
+                        h3 {
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    &__frontface {
+                        color: $c-content-1;
+                        background-color: $c-content-2;
+
+                        div.content {
+                            text-align: center;
+                            font-size: 1.6rem;
+                            grid-area: 3 / 1 / span 3 / span 5;
+                        }
+                    }
+
+                    &__backface {
+                        color: $c-content-1;
+                        background-color: $c-content-2;
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+
+
+
+
+        }
+
+        .is-filpped {
+            transform: rotateY(180deg);
+        }
+    }
+
+
+    /** mobile **/
+    @media only screen and (max-width: $sm) {}
+}

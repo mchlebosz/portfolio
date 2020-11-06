@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+}
+
+body {
+    background-color: $c-content-1;
+    color: $c-accent-1;
+    font-family: $font-main;
+
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: $font-head;
+}
+
+h2 {
+    font-family: $font-head;
+}
+
+h3 {
+    font-family: $font-head;
+}
+
+a {
+    div {
+        color: $c-accent-1;
+    }
+
+    transition: all 0.5s ease-in-out;
+    font-family: $font-main;
+    text-decoration: none;
+
+    &:hover {
+        div {
+            color: $c-active;
+        }
+    }
+}
+
+a.link {
+    display: block;
+    color: $c-accent-1;
+    text-shadow: 2px 2px $c-black-a60;
+    transform: translate(0px, 0px);
+
+
+
+    &:hover {
+        transform: translate(2px, 2px);
+        text-shadow: 0px 0px $c-black-a60;
+        color: $c-active;
+    }
+}
+
+main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    li {}
+}
